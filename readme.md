@@ -1,12 +1,8 @@
-https://roberto23eg-csis4260-a2-app-sn7u1f.streamlit.app
-
 # CSIS 4260 - Special Topics in Data Analytics
 
 ### Assignment 2 - Learning web scrapping and text analysis
 
 ## Name: Roberto Escalante Gafau
-
-## ID: 300383075
 
 > Included are the csv files with the results of the test comparison between BeautifulSoup and Playwright. There is also the csv file with the 100 articles scraped and the csv file with the summary and sentiment analysis for those 100 articles.
 
@@ -19,3 +15,7 @@ For my case I found BeautifulSoup more efficient and easier to use, with this to
 ### Part 2: Text Analysis
 
 For the second part I used nltk for the sentiment analysis and transformers for the summarization. I choosed those tools because they seem easier to use and gave me good results, also they work well with news.
+
+### Dashboard
+
+I have created a Dashboard using Streamlit, it can be found in this link: https://roberto23eg-csis4260-a2-app-sn7u1f.streamlit.app
