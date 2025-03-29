@@ -33,7 +33,7 @@ if page == "Overview":
 
     # Benchmark bar chart
     fig, ax = plt.subplots()
-    sns.barplot(x=["BeautifulSoup", "Playwright"], y=[bs4_time, playwright_time], palette="viridis", ax=ax)
+    sns.barplot(x=["BeautifulSoup", "Playwright"], y=[bs4_time, playwright_time], palette="viridis", ax=ax, hue=None, legend=False)
     ax.set_ylabel("Execution Time (seconds)")
     ax.set_title("Benchmarking Execution Time")
     st.pyplot(fig)
@@ -51,7 +51,7 @@ elif page == "Visualizations":
     # Sentiment Distribution
     st.write("### Sentiment Distribution")
     fig, ax = plt.subplots()
-    sns.countplot(x=data["Sentiment Direction"], palette="viridis", ax=ax)
+    sns.countplot(x=data["Sentiment Direction"], palette="viridis", ax=ax, hue=None, legend=False)
     st.pyplot(fig)
 
     # Average Sentiment Score Gauge
