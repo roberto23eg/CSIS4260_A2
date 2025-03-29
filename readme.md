@@ -18,4 +18,4 @@ For the second part I used nltk for the sentiment analysis and transformers for 
 
 ### Dashboard
 
-I have created a Dashboard using Streamlit, it can be found in this link: https://roberto23eg-csis4260-a2-app-sn7u1f.streamlit.app
+I have created a Dashboard using Streamlit, it can be found in this link:[CSIS4260 Assignment 2 Dashboard](https://csis4260a2-hvtydcfnygzehgfmpne5pt.streamlit.app/)

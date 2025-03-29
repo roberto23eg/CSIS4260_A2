@@ -66,15 +66,14 @@ elif page == "Visualizations":
         legend=False)
     st.pyplot(fig)
 
-    # Average Sentiment Score Gauge
-    avg_sentiment = data["Sentiment Score"].mean()
-    fig = go.Figure(go.Indicator(
-        mode="gauge+number",
-        value=avg_sentiment,
-        title={"text": "Average Sentiment Score"},
-        gauge={"axis": {"range": [-1, 1]}, "bar": {"color": "blue"}}
-    ))
-    st.plotly_chart(fig)
+    # Sentiment Scores
+    st.write("### Sentiment Scores Distribution")
+    fig, ax = plt.subplots()
+    sns.histplot(data["Sentiment Score"], bins=30, kde=True, color="blue", ax=ax)
+    ax.set_title("Sentiment Score Distribution")
+    ax.set_xlabel("Sentiment Score")
+    ax.set_ylabel("Frequency")
+    st.pyplot(fig)
     
     # Word Cloud
     st.write("### Word Cloud of Summaries")
